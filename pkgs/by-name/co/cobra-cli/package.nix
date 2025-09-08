@@ -9,16 +9,16 @@
 
 buildGoModule rec {
   pname = "cobra-cli";
-  version = "1.3.0";
+  version = "v1.3.0-21-g1d43487";
 
   src = fetchFromGitHub {
     owner = "spf13";
     repo = "cobra-cli";
-    rev = "v${version}";
-    sha256 = "sha256-E0I/Pxw4biOv7aGVzGlQOFXnxkc+zZaEoX1JmyMh6UE=";
+    rev = "1d43487";
+    sha256 = "sha256-8lJUn0LDTKwEFrV8GE77y779Ge0BAXJClDswcma8KVw=";
   };
 
-  vendorHash = "sha256-vrtGPQzY+NImOGaSxV+Dvch+GNPfL9XfY4lfCHTGXwY=";
+  vendorHash = "sha256-hYi1A9ZXMJX353EVAVs/ampVSadU/4NSkrnRT/zahB8=";
 
   nativeBuildInputs = [
     makeWrapper
